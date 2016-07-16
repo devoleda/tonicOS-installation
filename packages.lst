@@ -1,0 +1,29 @@
+BASE PACKS:
+*base
+*base-devel
+*xorg-server
+*alsa-utils
+*os-prober
+*grub-bios
+*wireless_tools wpa_supplicant wpa_actiond dialog netcfg iw
+*sudo
+*mesa
+*ttf-dejavu
+*slim/other DM
+
+
+GRAPHICS:
+if nvidia:
+	 nvidia nvidia-utils pangox-compat
+if amd:
+	xf86-video-ati
+if intel:
+	xf86-video-intel
+if else:
+	xf86-video-vesa
+
+xorg-server-utils xorg-xinit
+
+
+OTHER:
+
